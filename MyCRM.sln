@@ -5,6 +5,12 @@ VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyPlugins", "MyPlugins\MyPlugins.csproj", "{75705CD0-B037-417F-A113-64EEAFF6D0E8}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ClientScripts", "ClientScripts", "{EF175D45-6DD0-4640-8CC7-69FF06F2C202}"
+	ProjectSection(SolutionItems) = preProject
+		AccountScripts.js = AccountScripts.js
+		ContactScript.js = ContactScript.js
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
