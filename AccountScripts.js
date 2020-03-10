@@ -2,6 +2,21 @@ var Sdk = window.Sdk || {};
 (
     function () {
         this.formOnLoad = function (executionContext) {
+            Helper.DoSomething();
+            var formContext = executionContext.getFormContext();
+
+            var formType = formContext.ui.getFormType();
+            if (formType == 1) {
+                formContext.ui.setFormNotification("Creation", "INFO", "1");
+            }
+            else if (formType == 2) {
+                formContext.ui.setFormNotification("Edit", "INFO", "2");
+
+            }
+            else if (formType == 3) {
+                formContext.ui.setFormNotification("Read only", "INFO", "3");
+
+            }
 
         }
         this.formOnSave = function (executionContext) {
